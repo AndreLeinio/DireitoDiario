@@ -41,6 +41,9 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+	<link rel="stylesheet" href ="tags-input.css">
+	<script src = "tags-input.js"></script>
+
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -121,8 +124,9 @@
 					<textarea name="depoimento" id="depoimento" cols="10" class="form-control" placeholder="Escreva aqui seu depoimento" rows="3"></textarea>
 				</div>
 				<div class="form-group">
-					<input type="email" class="form-control" placeholder="#tags">
+						<input name="hashtags" type="tags" class="form-control" pattern="^#" placeholder="#hashtags">
 				</div>
+				<script>[].forEach.call(document.querySelectorAll('input[type="tags"]'), tagsInput);</script>
 				<div class="form-group">
 					<input type="submit" class="btn btn-primary" value="Enviar">
 				</div>
