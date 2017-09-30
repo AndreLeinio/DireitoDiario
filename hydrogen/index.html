@@ -101,7 +101,7 @@
 				<div class="col-md-2 text-center">
 					<div class="w3-container">
 						<img src="images/login.jpg" class="w3-circle" alt="Login" style="max-width:100px">
-						<figcaption>Cappa</figcaption>
+						<figcaption id="Name">Cappa</figcaption>
 					</div>
 				</div>
 				<div class="col-md-8">
@@ -123,10 +123,13 @@
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<div class="form-group">
+					<input name="Image Link" id="imageLink" type="text" class="form-control"  placeholder="Insira o link da imagem">
+				</div>
+				<div class="form-group">
 					<textarea name="depoimento" id="depoimento" cols="10" class="form-control" placeholder="Escreva aqui seu depoimento" rows="3"></textarea>
 				</div>
 				<div class="form-group">
-					<input name="hashtags" type="tags" class="form-control" pattern="^#" placeholder="#hashtags">
+					<input name="hashtags" id="tag" type="tags" class="form-control" pattern="^#" placeholder="#hashtags">
 				</div>
 				<script>
 					[].forEach.call(document.querySelectorAll('input[type="tags"]'), tagsInput);
