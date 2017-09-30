@@ -73,7 +73,28 @@
 
 	</script>
 </head>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function clickCounter(x) {
+	x.classList.toggle("fa-thumbs-up");
+	x.id = '_' + Math.random().toString(36).substr(2, 9)
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage[x.id]) {
+        	if (x.classList == "fa fa-thumbs-o-up"){
+            localStorage[x.id] = Number(localStorage[x.id])-1;}
+            else{
+            localStorage[x.id] = Number(localStorage[x.id])+1;
+            }
+        } else {
+            localStorage[x.id] = 1;
+        }
+        x.innerHTML =localStorage[x.id] + " people have liked this";
+    } else {
+        x.innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
 <body>
 
 
@@ -148,8 +169,9 @@
 							<a href="https://aderivaldo23.files.wordpress.com/2012/10/policial-morto-rio_02.jpg" class="image-popup fh5co-board-img"
 							 title="Anderson Rodrigo Silva"><img src="https://aderivaldo23.files.wordpress.com/2012/10/policial-morto-rio_02.jpg" alt="Free HTML5 Bootstrap template"></a>
 						</div>
-						<div class="fh5co-desc"><b>Anderson Rodrigo Silva</b><br>Mais um policial militar covardemente assassinado no sul de minas. E ai vcs se pronunciar
-							e ajudar a familia ou se calar<br><sub>#DireitoAVida</sub></div>
+						<div class="fh5co-desc"><b>Anderson Rodrigo Silva </b><br>Mais um policial militar covardemente assassinado no sul de minas. E ai vcs se pronunciar
+							e ajudar a familia ou se calar<br><sub>#DireitoAVida</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
+
 					</div>
 					<div class="item">
 						<div class="animate-box">
@@ -160,7 +182,7 @@
 							como coisas melhores do mundo.onde.lésbicas se lambem e chupam. Por vez os homens se usam dos seus penes misturados
 							com as fezes.Coisas repugnantes do diabo mesmos.E com tudo uma vis depravada lei para lhes protegerem pelos direitos
 							humanos corrupto mais o governo.Porém ainda a humilde sociedade brasileira sofrem ameaças se desrespeltar a tal lei
-							protetota a a estas berrações preconceituosas<br><sub>#IssoNaoEhDireito #LiberdadeReligiosa</sub></div>
+							protetota a a estas berrações preconceituosas<br><sub>#IssoNaoEhDireito #LiberdadeReligiosa</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
@@ -169,7 +191,7 @@
 						</div>
 						<div class="fh5co-desc"><b>Cyro Garino Anjos</b><br>seus cambadas um garoto menor de idade foi espancado até a morte aqui em pirassununga por
 							outros menores eai pegamos os moleques na covardia como eles fiozeram com o garoto ou esperamos vcs agirem pois eu
-							prefiro a primeira opção<br><sub>#DireitoASegurança</sub></div>
+							prefiro a primeira opção<br><sub>#DireitoASegurança</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
@@ -179,7 +201,7 @@
 						<div class="fh5co-desc"><b>Antonio Aliende</b><br>Sobre as agressões ao cristianismo pela ideologia esquerdista que pretende destruir não só
 							a figura de Jesus Cristo mas também a judaica e toda a cultura ocidental seus valores e moral ? Qual a posição dos
 							direitos humanos sobre a exposição do Santander ? Fico feliz em ver que os conservadores estão se manifestando e não
-							engolem mais o marxismo cultural<br><sub>#IssoNaoEhDireito #DireitoAExpressao</sub></div>
+							engolem mais o marxismo cultural<br><sub>#IssoNaoEhDireito #DireitoAExpressao</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
@@ -188,7 +210,7 @@
 						<div class="fh5co-desc"><b>Henrique Salles</b><br>A CADA ATO PRÓ ELIMINAÇÃO DE DE INTOLER NCIA MUITO SE FALA MUITO SE DIZ MAS DE CONCRETO NADA.
 							Não se tem noticia de um Templo com seus pilares com mais de 8 metros de altura serem perseguidos. Não se ve em noticiário
 							alguem condenado por INTOLERANCIA RELIGIOSA, Será que é por conta do templo não estar na periferia` ou por terem bancadas
-							representativas<br><sub>#DireitosIguais</sub></div>
+							representativas<br><sub>#DireitosIguais</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
@@ -196,13 +218,13 @@
 							 title="https://ogimg.infoglobo.com.br/in/20429889-4cd-d97/FT1500A/550/terreiro-de-umbanda.jpg"><img src="https://ogimg.infoglobo.com.br/in/20429889-4cd-d97/FT1500A/550/terreiro-de-umbanda.jpg" alt="Free HTML5 Bootstrap template"></a>
 						</div>
 						<div class="fh5co-desc"><b>Jose da Silva</b><br>O mal não está nas práticas religiosas desse povo, o mal está na ignorância de quem não sabe
-							respeitar a fé alheia. Eu particularmente gosto e admiro a umbanda e o candomblé<br><sub>#DireitoALiberdadeReligiosa</sub></div>
+							respeitar a fé alheia. Eu particularmente gosto e admiro a umbanda e o candomblé<br><sub>#DireitoALiberdadeReligiosa</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_7.jpg" class="image-popup fh5co-board-img"><img src="images/img_7.jpg" alt="Free HTML5 Bootstrap template"></a>
 							<div class="fh5co-desc"><b>Maria Conceição</b><br>Nem gostaria de enviar algo tão triste, mas infelizmente, as pessoas estão só compartilhando,
-								acredito que indo para o lugar certo, os direitos humanos tomarão as providências. Notícia: <a href="http://araguainanoticias.com.br/noticia/30733/mae-espanca-filho-em-goias-manda-video-ao-pai-em-araguaina-e-acaba-presa/"> link </a>								<br><sub>#DireitoAVida #DreitoASegurança</sub></div>
+								acredito que indo para o lugar certo, os direitos humanos tomarão as providências. Notícia: <a href="http://araguainanoticias.com.br/noticia/30733/mae-espanca-filho-em-goias-manda-video-ao-pai-em-araguaina-e-acaba-presa/"> link </a>								<br><sub>#DireitoAVida #DreitoASegurança</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -210,7 +232,7 @@
 							<a href="images/img_8.jpg" class="image-popup fh5co-board-img"><img src="images/img_8.jpg" alt="Free HTML5 Bootstrap template"></a>
 							<div class="fh5co-desc"><b>Redisdj Bsb</b><br>Desafio o pessoal dos direitos humanos montar uma força tarefa para auxiliar os policias na
 								hora do confronto com bandidos, sendo assim primeiro vão o pessoal da força tarefa dos direitos humanos dialogar
-								com os bandidos caso não tenha conversas, a força tarefa autorizaria os policiais de prosseguirem da maneira deles<br><sub>#DireitoASegurança</sub></div>
+								com os bandidos caso não tenha conversas, a força tarefa autorizaria os policiais de prosseguirem da maneira deles<br><sub>#DireitoASegurança</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -221,7 +243,7 @@
 								sejam respeitadas e que as pessoas tenham acesso aos direitos e garantias da nossa lei independentemente da classe
 								social, raça, gênero etc. nenhuma entidade de direitos humanos defenderá a morte dos policiais ou de civis em confrontos,
 								mas sim que todos sejam tratados de forma igualitária, evitando o autoritarismo de instituições que detém o poder
-								que muitas vezes disseminam a injustiça!<br><sub>#DireitosHumanos</sub></div>
+								que muitas vezes disseminam a injustiça!<br><sub>#DireitosHumanos</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -231,14 +253,14 @@
 								a comunidade local, respeita o traficante pelo simples fato de ver e ser tratado como um igual, coisa que o resto
 								da sociedade não vê e não faz. Como você, que falou dos policiais, mas não falou que os policiais também matam e
 								subjugam os moradores dessas favelas (pelo simples fato de morar lá, de ser negro, de ser pobre, ..), pois não podem,
-								não querem, não são permitidos a fazer algo contra os criminosos de verdade<br><sub>#DireitoASegurança</sub></div>
+								não querem, não são permitidos a fazer algo contra os criminosos de verdade<br><sub>#DireitoASegurança</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_10.jpg" class="image-popup fh5co-board-img"><img src="images/img_10.jpg" alt="Free HTML5 Bootstrap template"></a>
 							<div class="fh5co-desc"><b>Miriam Flores</b><br>Cadê os direitos humanos para Cintia Souza, 23 anos, estudante e estagiária, vítima de abuso
-								em ônibus na Avenida Paulista? É o safado está livre para continuar abusando das pessoas<br><sub>#DireitoASegurança #DireitodasMulheres</sub></div>
+								em ônibus na Avenida Paulista? É o safado está livre para continuar abusando das pessoas<br><sub>#DireitoASegurança #DireitodasMulheres</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -251,14 +273,14 @@
 								programação - inclusive no "Criança Esperança- , parece não se importar em DEPRECIAR as respectivas classes citadas
 								com tom de NOJO e REVOLTA. Será que ser ELETRICISTA / VENDEDOR DE BALAS e EMPREGADA DOMÉSTICA é uma 'pouca-vergonha'
 								no pensamento / ideologia dos CACIQUES da emissora????????? Por que tanta gente ainda dorme, Meu Deus!! Já passou
-								da hora de acordar!!!!!!!!!!!!!!!!<br><sub>#DireitoIguais #IssoNãoEhDireito</sub></div>
+								da hora de acordar!!!!!!!!!!!!!!!!<br><sub>#DireitoIguais #IssoNãoEhDireito</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_12.jpg" class="image-popup fh5co-board-img"><img src="images/img_12.jpg" alt="Free HTML5 Bootstrap template"></a>
 							<div class="fh5co-desc"><b>Emerson Pablo</b><br>"Enquanto a ocupação das forças armadas durar, essas pessoas terão o seu direito de ir e vir
-								cerceados" Ué os traficantes que madam em tudo no morro já não fazem isso?<br><sub>#DireitoASegurança #DireitoDeIrEVir</sub></div>
+								cerceados" Ué os traficantes que madam em tudo no morro já não fazem isso?<br><sub>#DireitoASegurança #DireitoDeIrEVir</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -267,14 +289,14 @@
 							<div class="fh5co-desc"><b>Luiz Azevedo</b><br>"Não vejo por que a força nacional atuando na Rocinha fere direitos humanos. O exército tem
 								que entrar sim, é treinado para a guerra e é guerra que os traficantes querem. Essa falácia da notícia só vê a problemática,
 								discurso velho. Sabemos que para os políticos no comando quanto pior melhor. Já que é assim, soldados nas cidades
-								e nas fronteiras. Pelo menos vale o quanto custa ao nosso bolso<br><sub>#DireitoASegurança #DireitoDeIrEVir</sub></div>
+								e nas fronteiras. Pelo menos vale o quanto custa ao nosso bolso<br><sub>#DireitoASegurança #DireitoDeIrEVir</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_14.jpg" class="image-popup fh5co-board-img"><img src="images/img_14.jpg" alt="Free HTML5 Bootstrap template"></a>
 							<div class="fh5co-desc"><b>Délia Ferreira</b><br>Direito humano é só pra ladrão, pessoas do bem não, eu não acredito nessa corja é que nem
-								Maria da Penha vale nada<br><sub>#DireitodaMulher #DireitosHumanos</sub></div>
+								Maria da Penha vale nada<br><sub>#DireitodaMulher #DireitosHumanos</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					
@@ -285,7 +307,7 @@
 								mesmo sentimento , a mesma preocupação ,o mesmo empenho com os militares e suas famílias ? Eu não consigo entender
 								... existem filhos ,esposas e mães de militares sofrendo e vocês nem se pronunciam ... ou o direito que vocês defendem
 								são pra alguns "humanos " ? Existem militares negros ,existem militares que superam abandono e venceram ! Direitos
-								humanos pra quem escolhe fazer o que é errado,ferindo e matando humanidade ?<br><sub>#DireitoAVida #DireitoASegurança</sub></div>
+								humanos pra quem escolhe fazer o que é errado,ferindo e matando humanidade ?<br><sub>#DireitoAVida #DireitoASegurança</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -296,38 +318,38 @@
 								na carteira proficional motorista proficional se encontra detido em sao vicente processo 0000394-42.2016.8.26.0294
 								eu como cidadan acho uma injustica e nao justica o adivogado facesseu e exgotarao os plazo segundo o juiz da comarca
 								de jacupirnga pode alguem se codenado sem defeza ..acho isso um mai muito grande a um cidadao trabalhador pur favor
-								m favor me resondao .....obrigado<br><sub>#DireitoAJustiça</sub></div>
+								m favor me resondao .....obrigado<br><sub>#DireitoAJustiça</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_17.jpg" class="image-popup fh5co-board-img"><img src="images/img_17.jpg" alt="Free HTML5 Bootstrap template"></a>
-							<div class="fh5co-desc"><b>Sebastião da Silva Ribeiro</b><br>A impressão que nos militantes e defensores das políticas de Direitos humanos temos é que alguns segmentos e instituições estão se equivocando com as políticas de direitos humanos e pregam o tempo todo que Direitos Humanos é para bandidos e outros.Trocando em ,miúdos para ver se há entendimento,As políticas de Direitos Humanos é para todos os Cidadãos ou Cidadãs que tem os seus direitos .Isto precisa estar na ponta da linguá de cada um.Sem que haja necessidade de desqualificar aqueles ou aquelas que tenham outro entendimento.Eu sempre coloco que a favela é um enigma,e que fazemos parte dela,somos invisíveis tanto quanto a favela,porém as balas perdidas nos acham com facilidade,já que ela e tão invisível como nós não poderia deixar de nos encontrar.<br><sub>#DireitoHumanos</sub></div>
+							<div class="fh5co-desc"><b>Sebastião da Silva Ribeiro</b><br>A impressão que nos militantes e defensores das políticas de Direitos humanos temos é que alguns segmentos e instituições estão se equivocando com as políticas de direitos humanos e pregam o tempo todo que Direitos Humanos é para bandidos e outros.Trocando em ,miúdos para ver se há entendimento,As políticas de Direitos Humanos é para todos os Cidadãos ou Cidadãs que tem os seus direitos .Isto precisa estar na ponta da linguá de cada um.Sem que haja necessidade de desqualificar aqueles ou aquelas que tenham outro entendimento.Eu sempre coloco que a favela é um enigma,e que fazemos parte dela,somos invisíveis tanto quanto a favela,porém as balas perdidas nos acham com facilidade,já que ela e tão invisível como nós não poderia deixar de nos encontrar.<br><sub>#DireitoHumanos</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_19.jpg" class="image-popup fh5co-board-img"><img src="images/img_19.jpg" alt="Free HTML5 Bootstrap template"></a>
-							<div class="fh5co-desc"><b>Rita Fernandes</b><br> <a href="https://direitosehumanos.wordpress.com/2015/03/09/direitos-dos-trabalhadores-e-empresas-multinacionais/#comment-929"> link noticia </a> A impressão que nos militantes e defensores das políticas de Direitos humanos temos é que alguns segmentos e instituições estão se equivocando com as políticas de direitos humanos e pregam o tempo todo que Direitos Humanos é para bandidos e outros.Trocando em ,miúdos para ver se há entendimento,As políticas de Direitos Humanos é para todos os Cidadãos ou Cidadãs que tem os seus direitos .Isto precisa estar na ponta da linguá de cada um.Sem que haja necessidade de desqualificar aqueles ou aquelas que tenham outro entendimento.Eu sempre coloco que a favela é um enigma,e que fazemos parte dela,somos invisíveis tanto quanto a favela,porém as balas perdidas nos acham com facilidade,já que ela e tão invisível como nós não poderia deixar de nos encontrar.<br><sub>#DireitoDoTrabalho</sub></div>
+							<div class="fh5co-desc"><b>Rita Fernandes</b><br> <a href="https://direitosehumanos.wordpress.com/2015/03/09/direitos-dos-trabalhadores-e-empresas-multinacionais/#comment-929"> link noticia </a> A impressão que nos militantes e defensores das políticas de Direitos humanos temos é que alguns segmentos e instituições estão se equivocando com as políticas de direitos humanos e pregam o tempo todo que Direitos Humanos é para bandidos e outros.Trocando em ,miúdos para ver se há entendimento,As políticas de Direitos Humanos é para todos os Cidadãos ou Cidadãs que tem os seus direitos .Isto precisa estar na ponta da linguá de cada um.Sem que haja necessidade de desqualificar aqueles ou aquelas que tenham outro entendimento.Eu sempre coloco que a favela é um enigma,e que fazemos parte dela,somos invisíveis tanto quanto a favela,porém as balas perdidas nos acham com facilidade,já que ela e tão invisível como nós não poderia deixar de nos encontrar.<br><sub>#DireitoDoTrabalho</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_20.jpg" class="image-popup fh5co-board-img"><img src="images/img_20.jpg" alt="Free HTML5 Bootstrap template"></a>
-							<div class="fh5co-desc"><b>Antonio</b><br> <a href="https://direitosehumanos.wordpress.com/2015/04/01/direitos-humanos-e-diplomacia-tensoes-entre-a-suecia-e-a-arabia-saudita/#comment-928"> link noticia </a> Um óptimo apanhado de uma situação que se repete mas que é paradigmática: ‘cultural relativism strikes back’, na sua pior forma – a que o toma como justificação para não cumprir os direitos humanos<br><sub>#DireitoHumanosEDiplomacia</sub></div>
+							<div class="fh5co-desc"><b>Antonio</b><br> <a href="https://direitosehumanos.wordpress.com/2015/04/01/direitos-humanos-e-diplomacia-tensoes-entre-a-suecia-e-a-arabia-saudita/#comment-928"> link noticia </a> Um óptimo apanhado de uma situação que se repete mas que é paradigmática: ‘cultural relativism strikes back’, na sua pior forma – a que o toma como justificação para não cumprir os direitos humanos<br><sub>#DireitoHumanosEDiplomacia</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_22.jpg" class="image-popup fh5co-board-img"><img src="images/img_22.jpg" alt="Free HTML5 Bootstrap template"></a>
-							<div class="fh5co-desc"><b>Marcio Testolin</b><br> <a href="http://g1.globo.com/distrito-federal/noticia/2016/07/debate-sobre-genero-e-sexualidade-em-aula-e-previsto-em-lei-diz-gdf.html" > link noticia </a> Parabéns ao professor pela iniciativa e todos(as) demais que defenderam a educação, os princípios constitucionais, entre outras questões importantes para um país melhor. Realmente se faz necessário que atuemos na redução da ignorância. E é importante ressaltar que o fato dos conteúdos de gênero terem sido retirados do novo PNE não proíbe que o conteúdo seja desenvolvido na escola, pois se ampara na Constituição que é superior.<br><sub>#DireitosSexuais #DireitoAEducação</sub></div>
+							<div class="fh5co-desc"><b>Marcio Testolin</b><br> <a href="http://g1.globo.com/distrito-federal/noticia/2016/07/debate-sobre-genero-e-sexualidade-em-aula-e-previsto-em-lei-diz-gdf.html" > link noticia </a> Parabéns ao professor pela iniciativa e todos(as) demais que defenderam a educação, os princípios constitucionais, entre outras questões importantes para um país melhor. Realmente se faz necessário que atuemos na redução da ignorância. E é importante ressaltar que o fato dos conteúdos de gênero terem sido retirados do novo PNE não proíbe que o conteúdo seja desenvolvido na escola, pois se ampara na Constituição que é superior.<br><sub>#DireitosSexuais #DireitoAEducação</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="animate-box">
 							<a href="images/img_23.jpg" class="image-popup fh5co-board-img"><img src="images/img_23.jpg" alt="Free HTML5 Bootstrap template"></a>
-							<div class="fh5co-desc"><b>Manoel Junior</b><br> <a href="http://g1.globo.com/distrito-federal/noticia/2016/07/debate-sobre-genero-e-sexualidade-em-aula-e-previsto-em-lei-diz-gdf.html" > link noticia </a>Vergonha! E não venham com esse papinho de preconceito, minorias e outras baboseiras criadas e cultuadas nesse País. Pansexualidade, relações poliamorosas, transsexualidade, homofobia e ideologia de gêneros em escola? Se existe esse tempo disponível nas escolas vamos voltar a estudar Educação, Moral e Cívica (EMC) e Organização Social e Política Brasileira (OSPB).<br><sub>#DireitoAEducação</sub></div>
+							<div class="fh5co-desc"><b>Manoel Junior</b><br> <a href="http://g1.globo.com/distrito-federal/noticia/2016/07/debate-sobre-genero-e-sexualidade-em-aula-e-previsto-em-lei-diz-gdf.html" > link noticia </a>Vergonha! E não venham com esse papinho de preconceito, minorias e outras baboseiras criadas e cultuadas nesse País. Pansexualidade, relações poliamorosas, transsexualidade, homofobia e ideologia de gêneros em escola? Se existe esse tempo disponível nas escolas vamos voltar a estudar Educação, Moral e Cívica (EMC) e Organização Social e Política Brasileira (OSPB).<br><sub>#DireitoAEducação</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					<div class="item">
@@ -366,7 +388,7 @@
 								na verdade, peguem só a cartilha de direitos humanos, dar uma estudada, ser contra direitos humanos, é ser contra
 								o direito a segurança, o direitos de expressar livremente sua opinião, o direito a liberdade e muito mais, inclusive
 								esse direito de você se expressar, poder falar contra o governo, tudo isso é direitos humanos, ser contra direitos
-								humanos é ser contra sua própria liberdade de expressar, viver digno como um ser humano.<br><sub>#DireitosHumanos</sub></div>
+								humanos é ser contra sua própria liberdade de expressar, viver digno como um ser humano.<br><sub>#DireitosHumanos</sub><div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div></div>
 						</div>
 					</div>
 					</div>
