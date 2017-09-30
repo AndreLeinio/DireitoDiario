@@ -4802,7 +4802,7 @@ tbody.collapse.in {
   float: left;
   padding: 20px 20px;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 35px;
   height: 80px;
 }
 .navbar-brand:hover, .navbar-brand:focus {
@@ -7604,7 +7604,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Montserrat", arial, sans-serif;
   color: #000;
 }
