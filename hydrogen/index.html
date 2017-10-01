@@ -78,7 +78,9 @@
 <script>
 function clickCounter(x) {
 	x.classList.toggle("fa-thumbs-up");
-	x.id = '_' + Math.random().toString(36).substr(2, 9)
+	if (x.id == ""){
+		x.id = '_' + Math.random().toString(36).substr(2, 9)
+	}
     if(typeof(Storage) !== "undefined") {
         if (localStorage[x.id]) {
         	if (x.classList == "fa fa-thumbs-o-up"){
@@ -89,7 +91,7 @@ function clickCounter(x) {
         } else {
             localStorage[x.id] = 1;
         }
-        x.innerHTML =localStorage[x.id] + " people have liked this";
+        x.innerHTML = localStorage[x.id] + " people have liked this";
     } else {
         x.innerHTML = "Sorry, your browser does not support web storage...";
     }
