@@ -12,7 +12,7 @@ function queNaoVaiDarOQue() {
 
     
     var html = '<a href="'+link+'" class="image-popup fh5co-board-img"><img src="'+ link +'" alt="Free HTML5 Bootstrap template"></a>' +
-        '<div class="fh5co-desc" > <b>' + nome + '</b><br>' + texto +'<br><sub>'+tags.replace(","," ")+'</sub>  </div >';
+        '<div class="fh5co-desc" > <b>' + nome + '</b><br>' + texto +'<br><sub>'+tags.replace(","," ")+'</sub> <div><i onclick="clickCounter(this)"   class="fa fa-thumbs-o-up"></i></div>  </div >';
     ab.innerHTML = html;
     item.appendChild(ab);
 
